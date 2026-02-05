@@ -100,8 +100,8 @@ export default function Home() {
       </ul>
     </div>
 
-    {/* PRAWA STRONA */}
-    <div className="w-full md:w-auto">
+    {/* PRAWA STRONA — przycisk wycentrowany na mobile */}
+    <div className="w-full md:w-auto flex justify-center md:justify-end">
       <button
         disabled
         className="block bg-[#22FF88]/30 text-black font-bold px-8 py-3 rounded-lg cursor-not-allowed"
@@ -111,27 +111,14 @@ export default function Home() {
     </div>
   </div>
 
-  {/* NAPIS COMING SOON — NAD BLUREM */}
+  {/* NAPIS COMING SOON — NAD BLUREM, responsywnie na środku */}
   <span
-    className="
-      absolute
-      text-[#22FF88]
-      text-3xl
-      font-bold
-      uppercase
-      tracking-wider
-      rotate-6
-      pointer-events-none
-    "
-    style={{
-      left: "62%",
-      top: "50%",
-      transform: "translate(-50%, -50%) rotate(6deg)",
-    }}
+    className="absolute text-[#22FF88] text-3xl font-bold uppercase tracking-wider rotate-6 pointer-events-none left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 md:left-[62%] md:translate-x-0"
   >
     COMING SOON...
   </span>
 </div>
+
 
 
         </section>
