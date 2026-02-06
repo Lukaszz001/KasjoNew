@@ -35,7 +35,6 @@ export default function Page() {
   // ---------------- Sidebar ----------------
   const Sidebar = () => (
     <>
-      {/* Hamburger mobile */}
       <button
         className="md:hidden fixed top-4 left-4 z-50 p-3 bg-[#22FF88] rounded shadow-lg hover:scale-105 transition-transform"
         onClick={() => setSidebarOpen(!sidebarOpen)}
@@ -47,7 +46,6 @@ export default function Page() {
         </div>
       </button>
 
-      {/* Fixed Sidebar */}
       <nav
         className={`bg-[#0B3D2E] text-white w-64 fixed top-0 left-0 h-screen z-40 transform ${
           sidebarOpen ? "translate-x-0" : "-translate-x-full"
@@ -84,67 +82,41 @@ export default function Page() {
 
   // ---------------- Banner ----------------
   const Banner = () => (
-    <>
-      <div className="relative w-full h-[60vh] md:h-[800px] bg-[#041A14] overflow-hidden rounded-2xl shadow-lg">
-        <img
-          src="/kasjobaner.png"
-          alt="Baner"
-          className="absolute inset-0 w-full h-full object-cover rounded-2xl"
-        />
-        <div className="absolute top-0 w-full h-24 bg-gradient-to-b from-[#041A14] to-transparent rounded-t-2xl"></div>
-        <div className="absolute bottom-0 w-full h-24 bg-gradient-to-t from-[#041A14] to-transparent rounded-b-2xl"></div>
+    <div className="relative w-full h-[60vh] md:h-[800px] bg-[#041A14] rounded-2xl shadow-lg overflow-hidden">
+      <img
+        src="/kasjobaner.png"
+        alt="Baner"
+        className="absolute inset-0 w-full h-full object-cover rounded-2xl"
+      />
+      <div className="absolute top-0 w-full h-24 bg-gradient-to-b from-[#041A14] to-transparent rounded-t-2xl z-10"></div>
+      <div className="absolute bottom-0 w-full h-24 bg-gradient-to-t from-[#041A14] to-transparent rounded-b-2xl z-10"></div>
 
-        <div className="hidden md:flex absolute left-10 top-1/3 flex-col gap-6 text-white max-w-lg z-10 font-sans">
-          <h1 className="text-4xl font-bold leading-snug">
-            Dołącz do społeczności <span className="block">Don Kasjo!</span>
-          </h1>
-          <p className="text-lg">
-            Oglądaj streamy, korzystaj z dedykowanych bonusów oraz zgarniaj BLIKI za aktywność!
-          </p>
+      {/* DESKTOP */}
+      <div className="hidden md:flex absolute left-10 top-1/3 flex-col gap-6 text-white max-w-lg z-20 font-sans">
+        <h1 className="text-4xl font-bold leading-snug">
+          Dołącz do społeczności <span className="block">Don Kasjo!</span>
+        </h1>
+        <p className="text-lg">
+          Oglądaj streamy, korzystaj z dedykowanych bonusów oraz zgarniaj BLIKI za aktywność!
+        </p>
 
-          <div className="flex gap-3 mt-4">
-            <a
-              href="#bonusy"
-              className="bg-[#22FF88] text-[#041A14] font-semibold px-6 py-3 rounded hover:bg-[#0B3D2E] transition text-center"
-            >
-              Przeglądaj bonusy
-            </a>
-            <a
-              href="https://kick.com/donkasjo"
-              target="_blank"
-              className="bg-[#22FF88] text-[#041A14] font-semibold px-6 py-3 rounded hover:bg-[#0B3D2E] transition text-center"
-            >
-              Oglądaj na Kick - codziennie o 19
-            </a>
-          </div>
-        </div>
-
-        <div className="md:hidden mt-4 px-5 font-sans text-white flex flex-col gap-4 max-w-lg mx-auto">
-          <h1 className="text-3xl font-bold leading-snug text-center">
-            Dołącz do społeczności <span className="block">Don Kasjo!</span>
-          </h1>
-          <p className="text-sm text-center">
-            Oglądaj streamy, korzystaj z dedykowanych bonusów oraz zgarniaj BLIKI za aktywność!
-          </p>
-
-          <div className="flex flex-col gap-3 mt-4">
-            <a
-              href="#bonusy"
-              className="bg-[#22FF88] text-[#041A14] font-semibold px-6 py-3 rounded hover:bg-[#0B3D2E] transition text-center"
-            >
-              Przeglądaj bonusy
-            </a>
-            <a
-              href="https://kick.com/donkasjo"
-              target="_blank"
-              className="bg-[#22FF88] text-[#041A14] font-semibold px-6 py-3 rounded hover:bg-[#0B3D2E] transition text-center"
-            >
-              Oglądaj na Kick - codziennie o 19
-            </a>
-          </div>
+        <div className="flex gap-3 mt-4">
+          <a
+            href="#bonusy"
+            className="bg-[#22FF88] text-[#041A14] font-semibold px-6 py-3 rounded hover:bg-[#0B3D2E] transition text-center"
+          >
+            Przeglądaj bonusy
+          </a>
+          <a
+            href="https://kick.com/donkasjo"
+            target="_blank"
+            className="bg-[#22FF88] text-[#041A14] font-semibold px-6 py-3 rounded hover:bg-[#0B3D2E] transition text-center"
+          >
+            Oglądaj na Kick - codziennie o 19
+          </a>
         </div>
       </div>
-    </>
+    </div>
   );
 
   return (
@@ -165,59 +137,78 @@ export default function Page() {
       >
         <Sidebar />
 
-        <main
-          className="
-            flex-1 
-            md:ml-64
-            bg-gradient-to-b from-[#06251C] to-[#041A14]
-            shadow-[inset_0_1px_0_rgba(255,255,255,0.04)]
-          "
-        >
+        <main className="flex-1 md:ml-64 bg-gradient-to-b from-[#06251C] to-[#041A14] shadow-[inset_0_1px_0_rgba(255,255,255,0.04)]">
           <Banner />
 
-          <div className="h-16 md:h-24" />
+          {/* MOBILE – TEKST I PRZYCISKI POD BANEREM */}
+          <div className="md:hidden flex flex-col items-center text-center mt-4 px-5 mb-12">
+            <h1 className="text-3xl font-bold leading-snug text-white">
+              Dołącz do społeczności <span className="block">Don Kasjo!</span>
+            </h1>
+            <p className="text-sm text-white mt-2">
+              Oglądaj streamy, korzystaj z dedykowanych bonusów oraz zgarniaj BLIKI za aktywność!
+            </p>
+
+            <div className="flex flex-col gap-3 mt-4 w-full max-w-xs">
+              <a
+                href="#bonusy"
+                className="bg-[#22FF88] text-[#041A14] font-semibold px-6 py-3 rounded hover:bg-[#0B3D2E] transition text-center"
+              >
+                Przeglądaj bonusy
+              </a>
+              <a
+                href="https://kick.com/donkasjo"
+                target="_blank"
+                className="bg-[#22FF88] text-[#041A14] font-semibold px-6 py-3 rounded hover:bg-[#0B3D2E] transition text-center"
+              >
+                Oglądaj na Kick - codziennie o 19
+              </a>
+            </div>
+          </div>
+
+          <div className="h-16 md:h-24" /> {/* odstęp przed sekcją bonusów */}
 
           {/* BONUSY */}
           <section id="bonusy" className="py-24 px-4 md:px-10">
             <h2 className="text-3xl font-bold mb-10">Bonusy</h2>
 
-            {/* WYNS - PREMIUM */}
-<div className="w-full max-w-6xl mx-auto 
-  bg-gradient-to-br from-[#0B3D2E] to-[#07251D] 
-  border border-[#22FF88]/15 rounded-2xl 
-  flex flex-col md:flex-row items-center gap-6 p-5 md:p-6 
-  transition-all duration-300 
-  hover:shadow-[0_0_25px_rgba(34,255,136,0.15)] 
-  hover:-translate-y-1
-  animate-pulsePremium
-">
-  <div className="bg-[#041A14]/80 backdrop-blur-sm p-4 rounded-xl flex-shrink-0">
-    <img src="/wyns.png" alt="Wyns Casino" className="w-[130px] md:w-[150px] h-auto object-contain" />
-  </div>
+            {/* WYNS – PREMIUM */}
+            <div className="w-full max-w-6xl mx-auto 
+              bg-gradient-to-br from-[#0B3D2E] to-[#07251D] 
+              border border-[#22FF88]/15 rounded-2xl 
+              flex flex-col md:flex-row items-center gap-6 p-5 md:p-6 
+              transition-all duration-300 
+              hover:shadow-[0_0_25px_rgba(34,255,136,0.15)] 
+              hover:-translate-y-1
+              animate-pulsePremium
+            ">
+              <div className="bg-[#041A14]/80 backdrop-blur-sm p-4 rounded-xl flex-shrink-0">
+                <img src="/wyns.png" alt="Wyns Casino" className="w-[130px] md:w-[150px] h-auto object-contain" />
+              </div>
 
-  <div className="flex-1 text-center md:text-left">
-    <h3 className="text-base md:text-lg font-bold mb-3 whitespace-nowrap">
-      100% BONUS OD DEPOZYTU + 200FS
-    </h3>
-    <ul className="space-y-1 text-sm md:text-base text-gray-200">
-      <li>• Bonus powitalny 100% do 2250 PLN</li>
-      <li>• Bonus na Sport 100% do 450 PLN</li>
-      <li>• 200 darmowych spinów</li>
-    </ul>
-  </div>
+              <div className="flex-1 text-center md:text-left">
+                <h3 className="text-base md:text-lg font-bold mb-3 whitespace-nowrap">
+                  100% BONUS OD DEPOZYTU + 200FS
+                </h3>
+                <ul className="space-y-1 text-sm md:text-base text-gray-200">
+                  <li>• Bonus powitalny 100% do 2250 PLN</li>
+                  <li>• Bonus na Sport 100% do 450 PLN</li>
+                  <li>• 200 darmowych spinów</li>
+                </ul>
+              </div>
 
-  <div className="w-full md:w-auto">
-    <a
-      href="https://bit.ly/DonKasjoWyns"
-      target="_blank"
-      className="block bg-[#22FF88] text-black font-bold px-8 py-3 rounded-lg text-center transition hover:shadow-[0_0_25px_rgba(34,255,136,0.55)] hover:-translate-y-0.5"
-    >
-      Odbierz bonus
-    </a>
-  </div>
-</div>
+              <div className="w-full md:w-auto">
+                <a
+                  href="https://bit.ly/DonKasjoWyns"
+                  target="_blank"
+                  className="block bg-[#22FF88] text-black font-bold px-8 py-3 rounded-lg text-center transition hover:shadow-[0_0_25px_rgba(34,255,136,0.55)] hover:-translate-y-0.5"
+                >
+                  Odbierz bonus
+                </a>
+              </div>
+            </div>
 
-<div className="h-10" />
+            <div className="h-10" />
 
             {/* SPINLINE */}
             <div className="w-full max-w-6xl mx-auto bg-gradient-to-br from-[#0B3D2E] to-[#07251D] border border-[#22FF88]/15 rounded-2xl flex flex-col md:flex-row items-center gap-6 p-5 md:p-6 transition-all duration-300 hover:shadow-[0_0_25px_rgba(34,255,136,0.15)] hover:-translate-y-1">
