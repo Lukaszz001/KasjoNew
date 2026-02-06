@@ -17,9 +17,9 @@ export const metadata: Metadata = {
   title: "Don Kasjo - Bonusy, Streamy, Społeczność",
   description: "Bonusy kasynowe, streamy i społeczność Don Kasjo",
   icons: {
-    icon: "/favicon.png",           // standardowy favicon
-    apple: "/favicon.png",          // Apple Touch Icon
-    shortcut: "/favicon.png",       // Windows/edge shortcut icon
+    icon: "/favicon2.png",           // standardowy favicon
+    apple: "/favicon2.png",          // Apple Touch Icon
+    shortcut: "/favicon2.png",       // Windows/edge shortcut icon
   },
 };
 
