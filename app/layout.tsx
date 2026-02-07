@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import Script from "next/script"; // 👈 DODANE
+import Script from "next/script";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -13,7 +13,6 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-// ---------------- Poprawne metadata ----------------
 export const metadata: Metadata = {
   title: "Don Kasjo - Bonusy, Streamy, Społeczność",
   description: "Bonusy kasynowe, streamy i społeczność Don Kasjo",
@@ -27,21 +26,17 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="pl">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        
-        {/* ✅ Plausible Analytics */}
+      <head>
+        {/* ✅ Plausible Analytics - nowa wersja */}
         <Script
           async
-          src="https://plausible.io/js/pa-Wa7vZhSms32ee92SpwpU9.js"
+          defer
+          data-domain="szybkie-wyplaty.vercel.app" // <--- zamień na swoją domenę
+          src="https://plausible.io/js/plausible.js"
           strategy="afterInteractive"
         />
-        <Script id="plausible-init" strategy="afterInteractive">
-          {`
-            window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)};
-            plausible.init();
-          `}
-        </Script>
-
+      </head>
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         {children}
       </body>
     </html>
