@@ -153,83 +153,122 @@ export default function Page() {
 
         {/* BONUSY */}
         <section id="bonusy" className="py-24 px-4 md:px-10">
-          {/* WYNS – PREMIUM */}
-          <div className="w-full max-w-6xl mx-auto 
-            bg-gradient-to-br from-[#0B3D2E] to-[#07251D] 
-            border border-[#22FF88]/15 rounded-2xl 
-            flex flex-col md:flex-row items-center gap-6 p-5 md:p-6 
-            transition-all duration-300 
-            hover:shadow-[0_0_25px_rgba(34,255,136,0.15)] 
-            hover:-translate-y-1
-            animate-pulsePremium
-          ">
-            <div className="bg-[#041A14]/80 backdrop-blur-sm p-4 rounded-xl flex-shrink-0">
-              <img src="/wyns.png" alt="Wyns Casino" className="w-[130px] md:w-[150px] h-auto object-contain" />
-            </div>
+         {/* WYNS – PREMIUM */}
+<div
+  className="w-full max-w-6xl mx-auto 
+    bg-gradient-to-br from-[#0B3D2E] to-[#07251D] 
+    border border-[#22FF88]/15 rounded-2xl 
+    flex flex-col md:flex-row items-center gap-6 p-5 md:p-6 
+    transition-all duration-300 
+    hover:shadow-[0_0_25px_rgba(34,255,136,0.15)] 
+    hover:-translate-y-1
+    animate-pulsePremium
+  "
+>
+  <div className="bg-[#041A14]/80 backdrop-blur-sm p-4 rounded-xl flex-shrink-0">
+    <img
+      src="/wyns.png"
+      alt="Wyns Casino"
+      className="w-[130px] md:w-[150px] h-auto object-contain"
+    />
+  </div>
 
-            <div className="flex-1 text-center md:text-left">
-              <h3 className="text-base md:text-lg font-bold mb-3 whitespace-nowrap">
-                100% BONUS OD DEPOZYTU + 200FS
-              </h3>
-              <ul className="space-y-1 text-sm md:text-base text-gray-200">
-                <li>• Bonus powitalny 100% do 2250 PLN</li>
-                <li>• Bonus na Sport 100% do 450 PLN</li>
-                <li>• 200 darmowych spinów</li>
-              </ul>
-            </div>
+  <div className="flex-1 text-center md:text-left">
+    <h3 className="text-base md:text-lg font-bold mb-3 whitespace-nowrap">
+      100% BONUS OD DEPOZYTU + 200FS
+    </h3>
+    <ul className="space-y-1 text-sm md:text-base text-gray-200">
+      <li>• Bonus powitalny 100% do 2250 PLN</li>
+      <li>• Bonus na Sport 100% do 450 PLN</li>
+      <li>• 200 darmowych spinów</li>
+    </ul>
+  </div>
 
-            <div className="w-full md:w-auto">
-              <a
-                href="https://bit.ly/DonKasjoWyns"
-                target="_blank"
-                className="block bg-[#22FF88] text-black font-bold px-8 py-3 rounded-lg text-center transition hover:shadow-[0_0_25px_rgba(34,255,136,0.55)] hover:-translate-y-0.5"
-              >
-                Odbierz bonus
-              </a>
-            </div>
-          </div>
+  <div className="w-full md:w-auto">
+    <a
+      href="https://bit.ly/DonKasjoWyns"
+      target="_blank"
+      rel="noopener noreferrer"
+      onClick={() =>
+        (window as any).gtag?.("event", "external_click", {
+          link_url: "https://bit.ly/DonKasjoWyns",
+          banner: "Wyns Casino",
+        })
+      }
+      className="block bg-[#22FF88] text-black font-bold px-8 py-3 rounded-lg text-center transition hover:shadow-[0_0_25px_rgba(34,255,136,0.55)] hover:-translate-y-0.5"
+    >
+      Odbierz bonus
+    </a>
+  </div>
+</div>
 
-          <div className="h-10" />
+<div className="h-10" />
 
           {/* SPINLINE */}
-          <div className="w-full max-w-6xl mx-auto bg-gradient-to-br from-[#0B3D2E] to-[#07251D] border border-[#22FF88]/15 rounded-2xl flex flex-col md:flex-row items-center gap-6 p-5 md:p-6 transition-all duration-300 hover:shadow-[0_0_25px_rgba(34,255,136,0.15)] hover:-translate-y-1">
-            <div className="bg-[#041A14]/80 backdrop-blur-sm p-4 rounded-xl flex-shrink-0">
-              <img src="/spinline.png" alt="Spinline Casino" className="w-[130px] md:w-[150px] h-auto object-contain" />
-            </div>
-            <div className="flex-1 text-center md:text-left">
-              <h3 className="text-base md:text-lg font-bold mb-3 whitespace-nowrap">
-                120% BONUS POWITALNY + 200FS
-              </h3>
-              <ul className="space-y-1 text-sm md:text-base text-gray-200">
-                <li>• Bonus powitalny 120% do 1450 PLN</li>
-                <li>• Rozbudowany pakiet powitalny aż do 6600 PLN</li>
-                <li>• 200 darmowych spinów</li>
-              </ul>
-            </div>
-            <div className="w-full md:w-auto flex flex-col gap-2">
-              <a
-                href="https://spln.plfexa.com/?mid=351895_2045808"
-                target="_blank"
-                className="block bg-[#22FF88] text-black font-bold px-8 py-3 rounded-lg text-center transition hover:shadow-[0_0_25px_rgba(34,255,136,0.55)] hover:-translate-y-0.5"
-              >
-                Odbierz bonus
-              </a>
-              <button
-                onClick={copyCode}
-                className="relative block bg-[#22FF88] text-black font-bold px-8 py-3 rounded-lg text-center transition hover:shadow-[0_0_25px_rgba(34,255,136,0.55)] hover:-translate-y-0.5"
-              >
-                Kod: KASJO
-                {copied && (
-                  <span className="absolute -top-6 left-1/2 transform -translate-x-1/2 bg-black/70 text-white text-xs px-2 py-1 rounded">
-                    Skopiowano!
-                  </span>
-                )}
-              </button>
-              <span className="text-xs text-gray-300 mt-1 text-center block">Kliknij, aby skopiować</span>
-            </div>
-          </div>
+<div
+  className="w-full max-w-6xl mx-auto bg-gradient-to-br from-[#0B3D2E] to-[#07251D] border border-[#22FF88]/15 rounded-2xl flex flex-col md:flex-row items-center gap-6 p-5 md:p-6 transition-all duration-300 hover:shadow-[0_0_25px_rgba(34,255,136,0.15)] hover:-translate-y-1"
+>
+  <div className="bg-[#041A14]/80 backdrop-blur-sm p-4 rounded-xl flex-shrink-0">
+    <img
+      src="/spinline.png"
+      alt="Spinline Casino"
+      className="w-[130px] md:w-[150px] h-auto object-contain"
+    />
+  </div>
 
-          <div className="h-10" />
+  <div className="flex-1 text-center md:text-left">
+    <h3 className="text-base md:text-lg font-bold mb-3 whitespace-nowrap">
+      120% BONUS POWITALNY + 200FS
+    </h3>
+    <ul className="space-y-1 text-sm md:text-base text-gray-200">
+      <li>• Bonus powitalny 120% do 1450 PLN</li>
+      <li>• Rozbudowany pakiet powitalny aż do 6600 PLN</li>
+      <li>• 200 darmowych spinów</li>
+    </ul>
+  </div>
+
+  <div className="w-full md:w-auto flex flex-col gap-2">
+    <a
+      href="https://spln.plfexa.com/?mid=351895_2045808"
+      target="_blank"
+      rel="noopener noreferrer"
+      onClick={() =>
+        (window as any).gtag?.("event", "external_click", {
+          link_url: "https://spln.plfexa.com/?mid=351895_2045808",
+          banner: "Spinline",
+        })
+      }
+      className="block bg-[#22FF88] text-black font-bold px-8 py-3 rounded-lg text-center transition hover:shadow-[0_0_25px_rgba(34,255,136,0.55)] hover:-translate-y-0.5"
+    >
+      Odbierz bonus
+    </a>
+
+    <button
+      onClick={() => {
+        copyCode(); // Twoja funkcja kopiowania
+        (window as any).gtag?.("event", "copy_code", {
+          code: "KASJO",
+          banner: "Spinline",
+        });
+      }}
+      className="relative block bg-[#22FF88] text-black font-bold px-8 py-3 rounded-lg text-center transition hover:shadow-[0_0_25px_rgba(34,255,136,0.55)] hover:-translate-y-0.5"
+    >
+      Kod: KASJO
+      {copied && (
+        <span className="absolute -top-6 left-1/2 transform -translate-x-1/2 bg-black/70 text-white text-xs px-2 py-1 rounded">
+          Skopiowano!
+        </span>
+      )}
+    </button>
+
+    <span className="text-xs text-gray-300 mt-1 text-center block">
+      Kliknij, aby skopiować
+    </span>
+  </div>
+</div>
+
+<div className="h-10" />
+
 
           {/* COMING SOON */}
           <div className="w-full max-w-6xl mx-auto bg-gradient-to-br from-[#0B3D2E] to-[#07251D] border border-[#22FF88]/15 rounded-2xl flex flex-col md:flex-row items-center gap-6 p-5 md:p-6 relative">
@@ -283,7 +322,7 @@ export default function Page() {
               <Image src="/kick-logo.svg" alt="Kick" width={20} height={20}/>
             </a>
 
-            <a href="https://www.instagram.com/donkasjo/" target="_blank" className="group inline-flex w-10 h-10 items-center justify-center rounded-full bg-gradient-to-tr from-[#a8002f] to-[#ff0055] hover:scale-105 transition hover:shadow-[0_0_14px_rgba(255,0,85,0.45)]">
+            <a href="https://www.instagram.com/kingdonkasjo/" target="_blank" className="group inline-flex w-10 h-10 items-center justify-center rounded-full bg-gradient-to-tr from-[#a8002f] to-[#ff0055] hover:scale-105 transition hover:shadow-[0_0_14px_rgba(255,0,85,0.45)]">
               <svg width="20" height="20" fill="none" viewBox="0 0 24 24">
                 <rect width="18" height="18" x="3" y="3" rx="5" stroke="white" strokeWidth="2"/>
                 <circle cx="12" cy="12" r="4" stroke="white" strokeWidth="2"/>
