@@ -21,6 +21,28 @@ export const metadata: Metadata = {
     apple: "/favicon2.png",
     shortcut: "/favicon2.png",
   },
+  metadataBase: new URL("https://szybkie-wyplaty.vercel.app"),
+  openGraph: {
+    title: "Don Kasjo - Bonusy, Streamy, Społeczność",
+    description: "Bonusy kasynowe, streamy i społeczność Don Kasjo",
+    url: "https://szybkie-wyplaty.vercel.app",
+    siteName: "Don Kasjo",
+    images: [
+      {
+        url: "https://szybkie-wyplaty.vercel.app/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Don Kasjo - Bonusy, Streamy, Społeczność",
+      },
+    ],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Don Kasjo - Bonusy, Streamy, Społeczność",
+    description: "Bonusy kasynowe, streamy i społeczność Don Kasjo",
+    images: ["https://szybkie-wyplaty.vercel.app/og-image.png"],
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -31,7 +53,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Script
           async
           defer
-          data-domain="szybkie-wyplaty.vercel.app" // <--- zamień na swoją domenę
+          data-domain="szybkie-wyplaty.vercel.app"
           src="https://plausible.io/js/plausible.js"
           strategy="afterInteractive"
         />
