@@ -283,7 +283,7 @@ export default function Page() {
               <Image src="/kick-logo.svg" alt="Kick" width={20} height={20}/>
             </a>
 
-            <a href="https://www.instagram.com/kingdonkasjo/" target="_blank" className="group inline-flex w-10 h-10 items-center justify-center rounded-full bg-gradient-to-tr from-[#a8002f] to-[#ff0055] hover:scale-105 transition hover:shadow-[0_0_14px_rgba(255,0,85,0.45)]">
+            <a href="https://www.instagram.com/donkasjo/" target="_blank" className="group inline-flex w-10 h-10 items-center justify-center rounded-full bg-gradient-to-tr from-[#a8002f] to-[#ff0055] hover:scale-105 transition hover:shadow-[0_0_14px_rgba(255,0,85,0.45)]">
               <svg width="20" height="20" fill="none" viewBox="0 0 24 24">
                 <rect width="18" height="18" x="3" y="3" rx="5" stroke="white" strokeWidth="2"/>
                 <circle cx="12" cy="12" r="4" stroke="white" strokeWidth="2"/>
