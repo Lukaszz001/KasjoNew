@@ -204,6 +204,72 @@ export default function Page() {
 
 <div className="h-10" />
 
+  {/* SpinBetter */}
+
+        <div
+  className="w-full max-w-6xl mx-auto bg-gradient-to-br from-[#0B3D2E] to-[#07251D] border border-[#22FF88]/15 rounded-2xl flex flex-col md:flex-row items-center gap-6 p-5 md:p-6 transition-all duration-300 hover:shadow-[0_0_25px_rgba(34,255,136,0.15)] hover:-translate-y-1"
+>
+  <div className="bg-[#041A14]/80 backdrop-blur-sm p-4 rounded-xl flex-shrink-0">
+    <img
+      src="/spinbetter.png"
+      alt="Spinbetter"
+      className="w-[130px] md:w-[150px] h-auto object-contain"
+    />
+  </div>
+
+  <div className="flex-1 text-center md:text-left">
+    <h3 className="text-base md:text-lg font-bold mb-3 whitespace-nowrap">
+      100% BONUS POWITALNY + 150FS
+    </h3>
+    <ul className="space-y-1 text-sm md:text-base text-gray-200">
+      <li>• Bonus powitalny 100% do 1275 PLN</li>
+      <li>• Pakiet powitalny do 6300 PLN</li>
+      <li>• 150 darmowych spinów</li>
+    </ul>
+  </div>
+
+  <div className="w-full md:w-auto flex flex-col gap-2">
+    <a
+      href="https://redirspinner.com/2u7A?p=%2Fregistration%2F"
+      target="_blank"
+      rel="noopener noreferrer"
+      onClick={() =>
+        (window as any).gtag?.("event", "external_click", {
+          link_url: "https://redirspinner.com/2u7A?p=%2Fregistration%2F",
+          banner: "Spinbetter",
+        })
+      }
+      className="block bg-[#22FF88] text-black font-bold px-8 py-3 rounded-lg text-center transition hover:shadow-[0_0_25px_rgba(34,255,136,0.55)] hover:-translate-y-0.5"
+    >
+      Odbierz bonus
+    </a>
+
+    <button
+      onClick={() => {
+        copyCode(); // Twoja funkcja kopiowania
+        (window as any).gtag?.("event", "copy_code", {
+          code: "KASJO",
+          banner: "Spinbetter",
+        });
+      }}
+      className="relative block bg-[#22FF88] text-black font-bold px-8 py-3 rounded-lg text-center transition hover:shadow-[0_0_25px_rgba(34,255,136,0.55)] hover:-translate-y-0.5"
+    >
+      Kod: KASJO
+      {copied && (
+        <span className="absolute -top-6 left-1/2 transform -translate-x-1/2 bg-black/70 text-white text-xs px-2 py-1 rounded">
+          Skopiowano!
+        </span>
+      )}
+    </button>
+
+    <span className="text-xs text-gray-300 mt-1 text-center block">
+      Kliknij, aby skopiować
+    </span>
+  </div>
+</div>
+
+<div className="h-10" />
+
           {/* SPINLINE */}
 <div
   className="w-full max-w-6xl mx-auto bg-gradient-to-br from-[#0B3D2E] to-[#07251D] border border-[#22FF88]/15 rounded-2xl flex flex-col md:flex-row items-center gap-6 p-5 md:p-6 transition-all duration-300 hover:shadow-[0_0_25px_rgba(34,255,136,0.15)] hover:-translate-y-1"
@@ -268,6 +334,8 @@ export default function Page() {
 </div>
 
 <div className="h-10" />
+
+      
 
 
           {/* COMING SOON */}
