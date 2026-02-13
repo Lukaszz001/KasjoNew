@@ -6,11 +6,11 @@ const Sidebar = () => {
   const [open, setOpen] = useState(false);
 
   const menuItems = [
-    { name: "Home", href: "#home", icon: <Home className="w-5 h-5 min-w-[20px]" /> },
-    { name: "Bonusy", href: "#bonusy", icon: <Gift className="w-5 h-5 min-w-[20px]" /> },
-    { name: "Instrukcje", href: "/instrukcje", icon: <BookOpen className="w-5 h-5 min-w-[20px]" /> },
-    { name: "Discord", href: "/discord", icon: <Users className="w-5 h-5 min-w-[20px]" /> },
-  ];
+  { name: "Home", href: "/#home", icon: <Home className="w-5 h-5 min-w-[20px]" /> },
+  { name: "Bonusy", href: "/#bonusy", icon: <Gift className="w-5 h-5 min-w-[20px]" /> },
+  { name: "Instrukcje", href: "/instrukcje", icon: <BookOpen className="w-5 h-5 min-w-[20px]" /> },
+  { name: "Discord", href: "/discord", icon: <Users className="w-5 h-5 min-w-[20px]" /> },
+];
 
   return (
     <>
