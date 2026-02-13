@@ -229,8 +229,8 @@ export default function Page() {
               </h3>
               <ul className="space-y-1 text-sm md:text-base text-gray-200">
                 <li>• Dostępny bonus powitalny do 1275 PLN</li>
-                 <li>• Duży wybór slotów i gier live</li>
-                <li>• Szybki proces rejestracji</li>
+                 <li>• Setki gier od znanych dostawców</li>
+                <li>• Wygodna aplikacja mobilna</li>
               </ul>
             </div>
 
