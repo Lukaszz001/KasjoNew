@@ -71,10 +71,10 @@ export default function Page() {
       {/* DESKTOP */}
       <div className="hidden md:flex absolute left-10 top-1/3 flex-col gap-6 text-white max-w-lg z-20 font-sans">
         <h1 className="text-4xl font-bold leading-snug">
-          RANKING KASYN ONLINE - LUTY 2026</span>
+          Dołącz do społeczności <span className="block">Don Kasjo!</span>
         </h1>
         <p className="text-lg">
-          Sprawdź zestawienie popularnych kasyn online i zobacz, które platformy wyróżniają się bonusami, ofertą oraz wygodą użytkowania.
+          Oglądaj streamy, korzystaj z dedykowanych bonusów oraz zgarniaj BLIKI za aktywność!
         </p>
       </div>
     </div>
@@ -97,10 +97,10 @@ export default function Page() {
         {/* MOBILE – TEKST POD BANEREM */}
         <div className="md:hidden flex flex-col items-center text-center mt-4 px-5 mb-12">
           <h1 className="text-3xl font-bold leading-snug text-white">
-            Dołącz do społeczności <span className="block">Don Kasjo!</span>
+            RANKING KASYN ONLINE - LUTY 2026
           </h1>
           <p className="text-sm text-white mt-2">
-            Oglądaj streamy, korzystaj z dedykowanych bonusów oraz zgarniaj BLIKI za aktywność!
+            Sprawdź zestawienie popularnych kasyn online i zobacz, które platformy wyróżniają się bonusami, ofertą oraz wygodą użytkowania.
           </p>
         </div>
 
@@ -229,8 +229,8 @@ export default function Page() {
               </h3>
               <ul className="space-y-1 text-sm md:text-base text-gray-200">
                 <li>• Dostępny bonus powitalny do 1275 PLN</li>
-                <li>• Setki gier od znanych dostawców PLN</li>
-                <li>• Wygodna w obsłudze aplikacja mobilna</li>
+                 <li>• Duży wybór slotów i gier live</li>
+                <li>• Szybki proces rejestracji</li>
               </ul>
             </div>
 
