@@ -113,9 +113,9 @@ export default function Page() {
           <div className="relative w-full max-w-6xl mx-auto bg-gradient-to-br from-[#0B3D2E] to-[#07251D] border border-[#22FF88]/15 rounded-2xl flex flex-col md:flex-row items-center gap-6 p-5 md:p-6 transition-all duration-300 hover:shadow-[0_0_25px_rgba(34,255,136,0.15)] hover:-translate-y-1">
 
             {/* Naklejka ranking */}
-            <div className="absolute -top-4 -left-4 bg-[#22FF88] text-black font-bold px-3 py-1 rounded-full shadow-lg text-sm md:text-base z-30">
-              1
-            </div>
+            <div className="absolute -top-4 -left-4 bg-yellow-400 text-black font-bold px-3 py-1 rounded-full shadow-lg text-sm md:text-base z-30 hover:animate-pulse">
+  1
+</div>
 
             <div className="bg-[#041A14]/80 backdrop-blur-sm p-4 rounded-xl flex-shrink-0">
               <img src="/wyns.png" alt="Wyns Casino" className="w-[130px] md:w-[150px] h-auto object-contain"/>
@@ -153,9 +153,9 @@ export default function Page() {
           {/* Slotuna */}
           <div className="relative w-full max-w-6xl mx-auto bg-gradient-to-br from-[#0B3D2E] to-[#07251D] border border-[#22FF88]/15 rounded-2xl flex flex-col md:flex-row items-center gap-6 p-5 md:p-6 transition-all duration-300 hover:shadow-[0_0_25px_rgba(34,255,136,0.15)] hover:-translate-y-1">
 
-            <div className="absolute -top-4 -left-4 bg-[#22FF88] text-black font-bold px-3 py-1 rounded-full shadow-lg text-sm md:text-base z-30">
-              2
-            </div>
+            <div className="absolute -top-4 -left-4 bg-gray-300 text-black font-bold px-3 py-1 rounded-full shadow-lg text-sm md:text-base z-30 hover:animate-pulse">
+  2
+</div>
 
             <div className="bg-[#041A14]/80 backdrop-blur-sm p-4 rounded-xl flex-shrink-0">
               <img src="/slotuna.png" alt="Slotuna" className="w-[130px] md:w-[150px] h-auto object-contain"/>
@@ -215,9 +215,9 @@ export default function Page() {
           {/* SpinBetter */}
           <div className="relative w-full max-w-6xl mx-auto bg-gradient-to-br from-[#0B3D2E] to-[#07251D] border border-[#22FF88]/15 rounded-2xl flex flex-col md:flex-row items-center gap-6 p-5 md:p-6 transition-all duration-300 hover:shadow-[0_0_25px_rgba(34,255,136,0.15)] hover:-translate-y-1">
 
-            <div className="absolute -top-4 -left-4 bg-[#22FF88] text-black font-bold px-3 py-1 rounded-full shadow-lg text-sm md:text-base z-30">
-              3
-            </div>
+            <div className="absolute -top-4 -left-4 bg-[#CD7F32] text-black font-bold px-3 py-1 rounded-full shadow-lg text-sm md:text-base z-30 hover:animate-pulse">
+  3
+</div>
 
             <div className="bg-[#041A14]/80 backdrop-blur-sm p-4 rounded-xl flex-shrink-0">
               <img src="/spinbetter.png" alt="Spinbetter" className="w-[130px] md:w-[150px] h-auto object-contain"/>
