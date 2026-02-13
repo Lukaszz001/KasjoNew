@@ -278,16 +278,17 @@ export default function Page() {
           </div>
 
         </section>
-      </main>
-    </div>
-  );
-}
-
-{/* Disclaimer na dole strony */}
+        {/* Disclaimer na dole strony */}
 <footer className="text-xs text-gray-400 text-center py-6 px-4 md:px-10">
   Ta strona prezentuje informacje o ekskluzywnych kasynach i zawiera linki afiliacyjne przeznaczone wyłącznie
   dla osób w regionach, gdzie hazard online jest legalny.
   <br />
   Użytkownicy są odpowiedzialni za zgodność z lokalnymi przepisami. Nie wspieramy nielegalnych form hazardu.
 </footer>
+      </main>
+    </div>
+  );
+}
+
+
 
