@@ -149,7 +149,10 @@ export default function Page() {
               </a>
             </div>
           </div>
-
+          
+{/* Neon glow pod banerem 1 */}
+<div className="absolute inset-0 -z-10 rounded-2xl shadow-[0_0_25px_10px_rgba(255,223,0,0.6)]"></div>
+          
           {/* Slotuna */}
           <div className="relative w-full max-w-6xl mx-auto bg-gradient-to-br from-[#0B3D2E] to-[#07251D] border border-[#22FF88]/15 rounded-2xl flex flex-col md:flex-row items-center gap-6 p-5 md:p-6 transition-all duration-300 hover:shadow-[0_0_25px_rgba(34,255,136,0.15)] hover:-translate-y-1">
 
