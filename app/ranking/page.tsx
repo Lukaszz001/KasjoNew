@@ -71,10 +71,10 @@ export default function Page() {
       {/* DESKTOP */}
       <div className="hidden md:flex absolute left-10 top-1/3 flex-col gap-6 text-white max-w-lg z-20 font-sans">
         <h1 className="text-4xl font-bold leading-snug">
-          Dołącz do społeczności <span className="block">Don Kasjo!</span>
+          RANKING KASYN ONLINE - LUTY 2026
         </h1>
         <p className="text-lg">
-          Oglądaj streamy, korzystaj z dedykowanych bonusów oraz zgarniaj BLIKI za aktywność!
+          Sprawdź zestawienie popularnych kasyn online i zobacz, które platformy wyróżniają się bonusami, ofertą oraz wygodą użytkowania.
         </p>
       </div>
     </div>
@@ -104,7 +104,7 @@ export default function Page() {
           </p>
         </div>
 
-        <div className="h-16 md:h-24" /> {/* odstęp przed sekcją bonusów */}
+        <div className="h-8 md:h-12" /> {/* odstęp przed sekcją bonusów */}
 
         {/* BONUSY / RANKING */}
         <section id="bonusy" className="py-24 px-4 md:px-10 space-y-10">
