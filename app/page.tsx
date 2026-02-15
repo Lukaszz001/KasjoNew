@@ -285,16 +285,17 @@ export default function Page() {
       <span className="text-xs text-gray-300 mt-1 text-center block">
         Kliknij, aby skopiować
       </span>
-    </div>
 
-    {/* Pole tekstowe w banerze, responsywne */}
-    <div className="mt-4 md:mt-0 absolute bottom-3 left-1/2 transform -translate-x-1/2 text-white font-bold text-sm md:text-base bg-black/20 px-3 py-1 rounded-md">
-      Wypłacone w lutym: 166 095 PLN
+      {/* Tekst Wypłacone w lutym – teraz w flow, pod wszystkimi przyciskami */}
+      <div className="mt-3 text-center text-white font-bold text-sm md:text-base">
+        Wypłacone w lutym: 166 095 PLN
+      </div>
     </div>
   </div>
 </div>
 
 <div className="h-10" />
+
 
 
 
