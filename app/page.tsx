@@ -206,70 +206,97 @@ export default function Page() {
 
           {/* Slotuna */}
 
-<div
-  className="w-full max-w-6xl mx-auto bg-gradient-to-br from-[#0B3D2E] to-[#07251D] border border-[#22FF88]/15 rounded-2xl flex flex-col md:flex-row items-center gap-6 p-5 md:p-6 transition-all duration-300 hover:shadow-[0_0_25px_rgba(34,255,136,0.15)] hover:-translate-y-1"
->
-  <div className="bg-[#041A14]/80 backdrop-blur-sm p-4 rounded-xl flex-shrink-0">
-    <img
-      src="/slotuna.png"
-      alt="Slotuna"
-      className="w-[130px] md:w-[150px] h-auto object-contain"
+<div className="relative w-full max-w-6xl mx-auto">
+  {/* Naklejka NEW z efektem papierowej folii */}
+  <div className="absolute -top-3 -right-3 w-16 h-16 bg-gradient-to-br from-red-500 to-red-600 text-white font-bold text-xs flex items-center justify-center rounded-full shadow-lg z-10 transform rotate-6"
+       style={{
+         boxShadow: '0 4px 10px rgba(0,0,0,0.25)',
+         backgroundImage: 'linear-gradient(145deg, #ff4d4d 0%, #ff1a1a 50%, #ff6666 100%)',
+         clipPath: 'circle(50% at 50% 50%)',
+       }}
+  >
+    <span className="relative z-20 text-sm">NEW</span>
+    {/* Delikatny połysk dla efektu folii */}
+    <div className="absolute top-0 left-0 w-full h-full rounded-full pointer-events-none"
+         style={{
+           background: 'linear-gradient(135deg, rgba(255,255,255,0.25) 0%, rgba(255,255,255,0) 60%)',
+           mixBlendMode: 'screen',
+         }}
     />
   </div>
 
-  <div className="flex-1 text-center md:text-left">
-    <h3 className="text-base md:text-lg font-bold mb-3 whitespace-nowrap">
-      100% BONUS POWITALNY + 200FS
-    </h3>
+  {/* Główny baner */}
+  <div
+    className="bg-gradient-to-br from-[#0B3D2E] to-[#07251D] border border-[#22FF88]/15 rounded-2xl flex flex-col md:flex-row items-center gap-6 p-5 md:p-6 transition-all duration-300 hover:shadow-[0_0_25px_rgba(34,255,136,0.15)] hover:-translate-y-1"
+  >
+    <div className="bg-[#041A14]/80 backdrop-blur-sm p-4 rounded-xl flex-shrink-0">
+      <img
+        src="/slotuna.png"
+        alt="Slotuna"
+        className="w-[130px] md:w-[150px] h-auto object-contain"
+      />
+    </div>
 
-    <ul className="space-y-1 text-sm md:text-base text-gray-200">
-      <li>• Bonus powitalny 100% do 2250 PLN</li>
-      <li>• 200 darmowych spinów</li>
-      <li>• 1 darmowy Bonus Crab</li>
-    </ul>
+    <div className="flex-1 text-center md:text-left">
+      <h3 className="text-base md:text-lg font-bold mb-3 whitespace-nowrap">
+        100% BONUS POWITALNY + 200FS
+      </h3>
+
+      <ul className="space-y-1 text-sm md:text-base text-gray-200">
+        <li>• Bonus powitalny 100% do 2250 PLN</li>
+        <li>• 200 darmowych spinów</li>
+        <li>• 1 darmowy Bonus Crab</li>
+      </ul>
+    </div>
+
+    <div className="w-full md:w-auto flex flex-col gap-2">
+      <a
+        href="https://sltna.pclira.com/?mid=349639_2019132"
+        target="_blank"
+        rel="noopener noreferrer"
+        onClick={() =>
+          (window as any).gtag?.("event", "external_click", {
+            link_url: "https://sltna.pclira.com/?mid=349639_2019132",
+            banner: "Slotuna",
+          })
+        }
+        className="block bg-[#22FF88] text-black font-bold px-8 py-3 rounded-lg text-center transition hover:shadow-[0_0_25px_rgba(34,255,136,0.55)] hover:-translate-y-0.5"
+      >
+        Odbierz bonus
+      </a>
+
+      <button
+        onClick={() => {
+          copyCode();
+          (window as any).gtag?.("event", "copy_code", {
+            code: "KASJO",
+            banner: "Slotuna",
+          });
+        }}
+        className="relative block bg-[#22FF88] text-black font-bold px-8 py-3 rounded-lg text-center transition hover:shadow-[0_0_25px_rgba(34,255,136,0.55)] hover:-translate-y-0.5"
+      >
+        Kod: KASJO
+        {copied && (
+          <span className="absolute -top-6 left-1/2 transform -translate-x-1/2 bg-black/70 text-white text-xs px-2 py-1 rounded">
+            Skopiowano!
+          </span>
+        )}
+      </button>
+
+      <span className="text-xs text-gray-300 mt-1 text-center block">
+        Kliknij, aby skopiować
+      </span>
+    </div>
   </div>
 
-  <div className="w-full md:w-auto flex flex-col gap-2">
-    <a
-      href="https://sltna.pclira.com/?mid=349639_2019132"
-      target="_blank"
-      rel="noopener noreferrer"
-      onClick={() =>
-        (window as any).gtag?.("event", "external_click", {
-          link_url: "https://sltna.pclira.com/?mid=349639_2019132",
-          banner: "Slotuna",
-        })
-      }
-      className="block bg-[#22FF88] text-black font-bold px-8 py-3 rounded-lg text-center transition hover:shadow-[0_0_25px_rgba(34,255,136,0.55)] hover:-translate-y-0.5"
-    >
-      Odbierz bonus
-    </a>
-
-    <button
-      onClick={() => {
-        copyCode();
-        (window as any).gtag?.("event", "copy_code", {
-          code: "KASJO",
-          banner: "Slotuna",
-        });
-      }}
-      className="relative block bg-[#22FF88] text-black font-bold px-8 py-3 rounded-lg text-center transition hover:shadow-[0_0_25px_rgba(34,255,136,0.55)] hover:-translate-y-0.5"
-    >
-      Kod: KASJO
-      {copied && (
-        <span className="absolute -top-6 left-1/2 transform -translate-x-1/2 bg-black/70 text-white text-xs px-2 py-1 rounded">
-          Skopiowano!
-        </span>
-      )}
-    </button>
-
-    <span className="text-xs text-gray-300 mt-1 text-center block">
-      Kliknij, aby skopiować
-    </span>
+  {/* Małe pole tekstowe na dole */}
+  <div className="mt-2 text-center text-white font-bold text-sm md:text-base">
+    Wypłacone w lutym: 166 095 PLN
   </div>
 </div>
 
 <div className="h-10" />
+
 
 
   {/* SpinBetter */}
