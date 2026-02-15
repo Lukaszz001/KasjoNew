@@ -216,7 +216,6 @@ export default function Page() {
        }}
   >
     <span className="relative z-20 text-sm">NEW</span>
-    {/* Połysk folii */}
     <div className="absolute top-0 left-0 w-full h-full rounded-full pointer-events-none"
          style={{
            background: 'linear-gradient(135deg, rgba(255,255,255,0.25) 0%, rgba(255,255,255,0) 60%)',
@@ -288,14 +287,15 @@ export default function Page() {
       </span>
     </div>
 
-    {/* Pole tekstowe w banerze, wyśrodkowane na dole */}
-    <div className="absolute bottom-3 left-1/2 transform -translate-x-1/2 text-white font-bold text-sm md:text-base">
+    {/* Pole tekstowe w banerze, responsywne */}
+    <div className="mt-4 md:mt-0 absolute bottom-3 left-1/2 transform -translate-x-1/2 text-white font-bold text-sm md:text-base bg-black/20 px-3 py-1 rounded-md">
       Wypłacone w lutym: 166 095 PLN
     </div>
   </div>
 </div>
 
 <div className="h-10" />
+
 
 
 
