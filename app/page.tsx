@@ -207,8 +207,8 @@ export default function Page() {
           {/* Slotuna */}
 
 <div className="relative w-full max-w-6xl mx-auto">
-  {/* Naklejka NEW z efektem papierowej folii */}
-  <div className="absolute -top-3 -right-3 w-16 h-16 bg-gradient-to-br from-red-500 to-red-600 text-white font-bold text-xs flex items-center justify-center rounded-full shadow-lg z-10 transform rotate-6"
+  {/* Naklejka NEW z lewej strony */}
+  <div className="absolute -top-3 -left-3 w-16 h-16 bg-gradient-to-br from-red-500 to-red-600 text-white font-bold text-xs flex items-center justify-center rounded-full shadow-lg z-10 transform -rotate-6"
        style={{
          boxShadow: '0 4px 10px rgba(0,0,0,0.25)',
          backgroundImage: 'linear-gradient(145deg, #ff4d4d 0%, #ff1a1a 50%, #ff6666 100%)',
@@ -216,7 +216,7 @@ export default function Page() {
        }}
   >
     <span className="relative z-20 text-sm">NEW</span>
-    {/* Delikatny połysk dla efektu folii */}
+    {/* Połysk folii */}
     <div className="absolute top-0 left-0 w-full h-full rounded-full pointer-events-none"
          style={{
            background: 'linear-gradient(135deg, rgba(255,255,255,0.25) 0%, rgba(255,255,255,0) 60%)',
@@ -227,7 +227,7 @@ export default function Page() {
 
   {/* Główny baner */}
   <div
-    className="bg-gradient-to-br from-[#0B3D2E] to-[#07251D] border border-[#22FF88]/15 rounded-2xl flex flex-col md:flex-row items-center gap-6 p-5 md:p-6 transition-all duration-300 hover:shadow-[0_0_25px_rgba(34,255,136,0.15)] hover:-translate-y-1"
+    className="bg-gradient-to-br from-[#0B3D2E] to-[#07251D] border border-[#22FF88]/15 rounded-2xl flex flex-col md:flex-row items-center gap-6 p-5 md:p-6 transition-all duration-300 hover:shadow-[0_0_25px_rgba(34,255,136,0.15)] hover:-translate-y-1 relative"
   >
     <div className="bg-[#041A14]/80 backdrop-blur-sm p-4 rounded-xl flex-shrink-0">
       <img
@@ -287,15 +287,16 @@ export default function Page() {
         Kliknij, aby skopiować
       </span>
     </div>
-  </div>
 
-  {/* Małe pole tekstowe na dole */}
-  <div className="mt-2 text-center text-white font-bold text-sm md:text-base">
-    Wypłacone w lutym: 166 095 PLN
+    {/* Pole tekstowe w banerze, wyśrodkowane na dole */}
+    <div className="absolute bottom-3 left-1/2 transform -translate-x-1/2 text-white font-bold text-sm md:text-base">
+      Wypłacone w lutym: 166 095 PLN
+    </div>
   </div>
 </div>
 
 <div className="h-10" />
+
 
 
 
