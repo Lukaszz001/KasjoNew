@@ -264,27 +264,7 @@ export default function Page() {
         Odbierz bonus
       </a>
 
-      <button
-        onClick={() => {
-          copyCode();
-          (window as any).gtag?.("event", "copy_code", {
-            code: "KASJO",
-            banner: "Slotuna",
-          });
-        }}
-        className="relative block bg-[#22FF88] text-black font-bold px-8 py-3 rounded-lg text-center transition hover:shadow-[0_0_25px_rgba(34,255,136,0.55)] hover:-translate-y-0.5"
-      >
-        Kod: KASJO
-        {copied && (
-          <span className="absolute -top-6 left-1/2 transform -translate-x-1/2 bg-black/70 text-white text-xs px-2 py-1 rounded">
-            Skopiowano!
-          </span>
-        )}
-      </button>
-
-      <span className="text-xs text-gray-300 mt-1 text-center block">
-        Kliknij, aby skopiować
-      </span>
+     
 
       {/* Tekst Wypłacone w lutym – teraz w flow, pod wszystkimi przyciskami */}
       <div className="mt-3 text-center text-white font-bold text-sm md:text-base">
