@@ -155,30 +155,32 @@ export default function Page() {
         <section id="bonusy" className="py-24 px-4 md:px-10">
          
 
-          {/* Slotuna */}
+         {/* Slotuna */}
 
 <div className="relative w-full max-w-6xl mx-auto">
   {/* Naklejka NEW z lewej strony */}
-  <div className="absolute -top-3 -left-3 w-16 h-16 bg-gradient-to-br from-red-500 to-red-600 text-white font-bold text-xs flex items-center justify-center rounded-full shadow-lg z-10 transform -rotate-6"
-       style={{
-         boxShadow: '0 4px 10px rgba(0,0,0,0.25)',
-         backgroundImage: 'linear-gradient(145deg, #ff4d4d 0%, #ff1a1a 50%, #ff6666 100%)',
-         clipPath: 'circle(50% at 50% 50%)',
-       }}
+  <div
+    className="absolute -top-3 -left-3 w-16 h-16 bg-gradient-to-br from-red-500 to-red-600 text-white font-bold text-xs flex items-center justify-center rounded-full shadow-lg z-10 transform -rotate-6"
+    style={{
+      boxShadow: "0 4px 10px rgba(0,0,0,0.25)",
+      backgroundImage:
+        "linear-gradient(145deg, #ff4d4d 0%, #ff1a1a 50%, #ff6666 100%)",
+      clipPath: "circle(50% at 50% 50%)",
+    }}
   >
     <span className="relative z-20 text-sm">NEW</span>
-    <div className="absolute top-0 left-0 w-full h-full rounded-full pointer-events-none"
-         style={{
-           background: 'linear-gradient(135deg, rgba(255,255,255,0.25) 0%, rgba(255,255,255,0) 60%)',
-           mixBlendMode: 'screen',
-         }}
+    <div
+      className="absolute top-0 left-0 w-full h-full rounded-full pointer-events-none"
+      style={{
+        background:
+          "linear-gradient(135deg, rgba(255,255,255,0.25) 0%, rgba(255,255,255,0) 60%)",
+        mixBlendMode: "screen",
+      }}
     />
   </div>
 
   {/* Główny baner */}
-  <div
-    className="bg-gradient-to-br from-[#0B3D2E] to-[#07251D] border border-[#22FF88]/15 rounded-2xl flex flex-col md:flex-row items-center gap-6 p-5 md:p-6 transition-all duration-300 hover:shadow-[0_0_25px_rgba(34,255,136,0.15)] hover:-translate-y-1 relative"
-  >
+  <div className="bg-gradient-to-br from-[#0B3D2E] to-[#07251D] border border-[#22FF88]/15 rounded-2xl flex flex-col md:flex-row items-center gap-6 p-5 md:p-6 transition-all duration-300 hover:shadow-[0_0_25px_rgba(34,255,136,0.15)] hover:-translate-y-1 relative">
     <div className="bg-[#041A14]/80 backdrop-blur-sm p-4 rounded-xl flex-shrink-0">
       <img
         src="/slotuna.png"
@@ -215,9 +217,7 @@ export default function Page() {
         Odbierz bonus
       </a>
 
-     
-
-      {/* Tekst Wypłacone w lutym – teraz w flow, pod wszystkimi przyciskami */}
+      {/* Tekst Wypłacone w lutym */}
       <div className="mt-3 text-center text-white font-bold text-sm md:text-base">
         Wypłacone w lutym: 166 095 PLN
       </div>
