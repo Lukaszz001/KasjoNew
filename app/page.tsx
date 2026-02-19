@@ -287,6 +287,50 @@ export default function Page() {
 
 <div className="h-10" />
 
+{/* Punter */}
+
+<div
+  className="w-full max-w-6xl mx-auto bg-gradient-to-br from-[#0B3D2E] to-[#07251D] border border-[#22FF88]/15 rounded-2xl flex flex-col md:flex-row items-center gap-6 p-5 md:p-6 transition-all duration-300 hover:shadow-[0_0_25px_rgba(34,255,136,0.15)] hover:-translate-y-1"
+>
+  <div className="bg-[#041A14]/80 backdrop-blur-sm p-4 rounded-xl flex-shrink-0">
+    <img
+      src="/punter.png"
+      alt="Punter"
+      className="w-[130px] md:w-[150px] h-auto object-contain"
+    />
+  </div>
+
+  <div className="flex-1 text-center md:text-left">
+    <h3 className="text-base md:text-lg font-bold mb-3 whitespace-nowrap">
+      100% BONUS POWITALNY + 200 FS
+    </h3>
+    <ul className="space-y-1 text-sm md:text-base text-gray-200">
+      <li>• Bonus powitalny 100% aż do 2250 PLN</li>
+      <li>• 200 darmowych spinów</li>
+    </ul>
+  </div>
+
+  <div className="w-full md:w-auto flex flex-col gap-2">
+    <a
+      href="https://mrp.naralvin.com/?mid=357160_2060521"
+      target="_blank"
+      rel="noopener noreferrer"
+      onClick={() =>
+        (window as any).gtag?.("event", "external_click", {
+          link_url: "https://mrp.naralvin.com/?mid=357160_2060521",
+          banner: "Punter",
+        })
+      }
+      className="block bg-[#22FF88] text-black font-bold px-8 py-3 rounded-lg text-center transition hover:shadow-[0_0_25px_rgba(34,255,136,0.55)] hover:-translate-y-0.5"
+    >
+      Odbierz bonus
+    </a>
+  </div>
+</div>
+
+<div className="h-10" />
+
+          
           {/* SPINLINE */}
 <div
   className="w-full max-w-6xl mx-auto bg-gradient-to-br from-[#0B3D2E] to-[#07251D] border border-[#22FF88]/15 rounded-2xl flex flex-col md:flex-row items-center gap-6 p-5 md:p-6 transition-all duration-300 hover:shadow-[0_0_25px_rgba(34,255,136,0.15)] hover:-translate-y-1"
