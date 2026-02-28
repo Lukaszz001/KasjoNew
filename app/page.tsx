@@ -155,19 +155,71 @@ export default function Page() {
         <section id="bonusy" className="py-24 px-4 md:px-10">
          
 
-        {/* Slotuna */}
+  {/* ========================= */}
+{/* LuckyFruits – NOWY BANER Z PODŚWIETLENIEM */}
+{/* ========================= */}
 
-<div className="relative w-full max-w-6xl mx-auto">
-  {/* Główny baner */}
+<div className="relative w-full max-w-6xl mx-auto mb-8">
   <div
     className="bg-gradient-to-br from-[#0B3D2E] to-[#07251D] 
     border border-[#22FF88]/15 rounded-2xl 
     flex flex-col md:flex-row items-center gap-6 p-5 md:p-6 
     transition-all duration-300 
-    hover:shadow-[0_0_25px_rgba(34,255,136,0.15)] 
+    hover:shadow-[0_0_25px_rgba(34,255,136,0.25)] 
     hover:-translate-y-1 
     relative
     animate-pulsePremium"
+  >
+    <div className="bg-[#041A14]/80 backdrop-blur-sm p-4 rounded-xl flex-shrink-0">
+      <img
+        src="/fruits.png"
+        alt="LuckyFruits"
+        className="w-[130px] md:w-[150px] h-auto object-contain"
+      />
+    </div>
+
+    <div className="flex-1 text-center md:text-left">
+      <h3 className="text-base md:text-lg font-bold mb-3 whitespace-nowrap">
+        100% BONUS POWITALNY + 100FS
+      </h3>
+
+      <ul className="space-y-1 text-sm md:text-base text-gray-200">
+        <li>• Bonus powitalny 100% do 1500 PLN</li>
+        <li>• 200 darmowych spinów</li>
+        <li>• Pakiet powitalny do 4000 PLN</li>
+      </ul>
+    </div>
+
+    <div className="w-full md:w-auto flex flex-col gap-2">
+      <a
+        href="https://affitrck2.com/C.ashx?btag=a_386b_11c_&affid=183&siteid=386&adid=11&c="
+        target="_blank"
+        rel="noopener noreferrer"
+        onClick={() =>
+          (window as any).gtag?.("event", "external_click", {
+            link_url: "https://affitrck2.com/C.ashx?btag=a_386b_11c_&affid=183&siteid=386&adid=11&c=",
+            banner: "LuckyFruits",
+          })
+        }
+        className="block bg-[#22FF88] text-black font-bold px-8 py-3 rounded-lg text-center transition hover:shadow-[0_0_25px_rgba(34,255,136,0.55)] hover:-translate-y-0.5"
+      >
+        Odbierz bonus
+      </a>
+    </div>
+  </div>
+</div>
+
+
+{/* ========================= */}
+{/* Slotuna – BEZ PODŚWIETLENIA */}
+{/* ========================= */}
+
+<div className="relative w-full max-w-6xl mx-auto">
+  <div
+    className="bg-gradient-to-br from-[#0B3D2E] to-[#07251D] 
+    border border-[#22FF88]/15 rounded-2xl 
+    flex flex-col md:flex-row items-center gap-6 p-5 md:p-6 
+    transition-all duration-300"
   >
     <div className="bg-[#041A14]/80 backdrop-blur-sm p-4 rounded-xl flex-shrink-0">
       <img
