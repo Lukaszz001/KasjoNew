@@ -156,20 +156,27 @@ export default function Page() {
          
 
   {/* ========================= */}
-{/* LuckyFruits – NOWY BANER Z PODŚWIETLENIEM */}
-{/* ========================= */}
-
+{/* LuckyFruits – PREMIUM TOP #1 */}
 <div className="relative w-full max-w-6xl mx-auto mb-8">
   <div
     className="bg-gradient-to-br from-[#0B3D2E] to-[#07251D] 
-    border border-[#22FF88]/15 rounded-2xl 
+    border border-[#22FF88]/20 rounded-2xl 
     flex flex-col md:flex-row items-center gap-6 p-5 md:p-6 
     transition-all duration-300 
-    hover:shadow-[0_0_25px_rgba(34,255,136,0.25)] 
+    hover:shadow-[0_0_35px_rgba(34,255,136,0.35)] 
     hover:-translate-y-1 
-    relative
-    animate-pulsePremium"
+    relative"
   >
+
+    {/* Premium Badge */}
+    <div className="absolute -top-5 left-6 px-5 py-2 rounded-full 
+      bg-gradient-to-r from-[#22FF88] via-[#c6ff00] to-[#22FF88]
+      text-black text-xs font-extrabold tracking-wider uppercase
+      shadow-[0_0_25px_rgba(198,255,0,0.5)]
+      border border-white/30">
+      ⭐ TOP #1
+    </div>
+
     <div className="bg-[#041A14]/80 backdrop-blur-sm p-4 rounded-xl flex-shrink-0">
       <img
         src="/fruits.png"
@@ -201,7 +208,7 @@ export default function Page() {
             banner: "LuckyFruits",
           })
         }
-        className="block bg-[#22FF88] text-black font-bold px-8 py-3 rounded-lg text-center transition hover:shadow-[0_0_25px_rgba(34,255,136,0.55)] hover:-translate-y-0.5"
+        className="block w-full md:w-[220px] bg-[#22FF88] text-black font-bold px-8 py-3 rounded-lg text-center transition hover:shadow-[0_0_30px_rgba(34,255,136,0.6)] hover:-translate-y-0.5"
       >
         Odbierz bonus
       </a>
