@@ -156,71 +156,7 @@ export default function Page() {
          
 
   {/* ========================= */}
-{/* LuckyFruits – PREMIUM TOP #1 + NEON */}
-<div className="relative w-full max-w-6xl mx-auto mb-8">
-  <div
-    className="bg-gradient-to-br from-[#0B3D2E] via-[#0F5132] to-[#07251D] 
-    border border-[#22FF88]/20 rounded-2xl 
-    flex flex-col md:flex-row items-center gap-6 p-5 md:p-6 
-    transition-all duration-300 
-    hover:shadow-[0_0_40px_rgba(34,255,136,0.35)] 
-    hover:-translate-y-1 
-    relative
-    animate-pulsePremium"
-  >
 
-    {/* Premium Badge */}
-    <div className="absolute -top-5 left-6 px-5 py-2 rounded-full 
-      bg-gradient-to-r from-[#22FF88] via-[#c6ff00] to-[#22FF88]
-      text-black text-xs font-extrabold tracking-wider uppercase
-      shadow-[0_0_25px_rgba(34,255,136,0.6)]
-      border border-white/30">
-      ⭐ TOP #1
-    </div>
-
-    {/* Logo */}
-    <div className="bg-[#041A14]/80 backdrop-blur-sm p-4 rounded-xl flex-shrink-0">
-      <img
-        src="/fruits.png"
-        alt="LuckyFruits"
-        className="w-[130px] md:w-[150px] h-auto object-contain"
-      />
-    </div>
-
-    {/* Text */}
-    <div className="flex-1 text-center md:text-left">
-      <h3 className="text-base md:text-lg font-bold mb-3 whitespace-nowrap">
-        100% BONUS POWITALNY + 100FS
-      </h3>
-
-      <ul className="space-y-1 text-sm md:text-base text-gray-200">
-        <li>• Bonus powitalny 100% do 1500 PLN</li>
-        <li>• 200 darmowych spinów</li>
-        <li>• Pakiet powitalny do 4000 PLN</li>
-      </ul>
-    </div>
-
-    {/* CTA */}
-    <div className="w-full md:w-auto flex flex-col gap-2">
-      <a
-        href="https://affitrck2.com/C.ashx?btag=a_386b_11c_&affid=183&siteid=386&adid=11&c="
-        target="_blank"
-        rel="noopener noreferrer"
-        onClick={() =>
-          (window as any).gtag?.("event", "external_click", {
-            link_url: "https://affitrck2.com/C.ashx?btag=a_386b_11c_&affid=183&siteid=386&adid=11&c=",
-            banner: "LuckyFruits",
-          })
-        }
-        className="block w-full md:w-[220px] bg-[#22FF88] text-black font-bold px-8 py-3 rounded-lg text-center transition 
-        hover:shadow-[0_0_35px_rgba(34,255,136,0.65)] 
-        hover:-translate-y-0.5"
-      >
-        Odbierz bonus
-      </a>
-    </div>
-  </div>
-</div>
 
 
 {/* ========================= */}
