@@ -441,45 +441,79 @@ export default function Page() {
           </div>
         </div>
 
-        {/* FOOTER */}
-        <footer className="w-full max-w-7xl mx-auto text-center text-sm text-gray-400 pb-12 px-4">
-          <div className="flex justify-center gap-5 mb-6">
-            <a href="https://kick.com/donkasjo" target="_blank" className="group inline-flex w-10 h-10 items-center justify-center rounded-full bg-[#1eea5c]/10 hover:bg-[#1eea5c]/20 transition hover:shadow-[0_0_12px_rgba(30,234,92,0.45)]">
-              <Image src="/kick-logo.svg" alt="Kick" width={20} height={20}/>
-            </a>
+       {/* FOOTER */}
+<footer className="w-full max-w-7xl mx-auto text-center text-sm text-gray-400 pb-12 px-4">
+  <div className="flex justify-center gap-5 mb-6">
 
-            <a href="https://www.instagram.com/kingdonkasjo/" target="_blank" className="group inline-flex w-10 h-10 items-center justify-center rounded-full bg-gradient-to-tr from-[#a8002f] to-[#ff0055] hover:scale-105 transition hover:shadow-[0_0_14px_rgba(255,0,85,0.45)]">
-              <svg width="20" height="20" fill="none" viewBox="0 0 24 24">
-                <rect width="18" height="18" x="3" y="3" rx="5" stroke="white" strokeWidth="2"/>
-                <circle cx="12" cy="12" r="4" stroke="white" strokeWidth="2"/>
-                <circle cx="17" cy="7" r="1.2" fill="white"/>
-              </svg>
-            </a>
+    <a
+      href="https://kick.com/donkasjo"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="group inline-flex w-10 h-10 items-center justify-center rounded-full bg-[#1eea5c]/10 hover:bg-[#1eea5c]/20 transition hover:shadow-[0_0_12px_rgba(30,234,92,0.45)]"
+    >
+      <Image src="/kick-logo.svg" alt="Kick" width={20} height={20} />
+    </a>
 
-            <a href="https://x.com/don_kasjo" target="_blank" className="inline-flex w-10 h-10 items-center justify-center rounded-full bg-white/5 hover:bg-white/10 transition">
-              <svg width="20" height="20" fill="white" viewBox="0 0 24 24">
-                <path d="M17.53 6.47L12 10.94 6.47 6.47 10.94 12l-4.47 4.47L12 13.06l4.47 4.47L13.06 12z"/>
-              </svg>
-            </a>
+    <a
+      href="https://www.instagram.com/kingdonkasjo/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="group inline-flex w-10 h-10 items-center justify-center rounded-full bg-gradient-to-tr from-[#a8002f] to-[#ff0055] hover:scale-105 transition hover:shadow-[0_0_14px_rgba(255,0,85,0.45)]"
+    >
+      <svg width="20" height="20" fill="none" viewBox="0 0 24 24">
+        <rect width="18" height="18" x="3" y="3" rx="5" stroke="white" strokeWidth="2"/>
+        <circle cx="12" cy="12" r="4" stroke="white" strokeWidth="2"/>
+        <circle cx="17" cy="7" r="1.2" fill="white"/>
+      </svg>
+    </a>
 
-            <a href="https://www.youtube.com/@DonKasjoKrol" target="_blank" className="inline-flex w-10 h-10 items-center justify-center rounded-full bg-[#ff0000]/15 hover:bg-[#ff0000]/25 transition">
-              <svg width="22" height="22" fill="none" viewBox="0 0 24 24">
-                <rect x="3" y="6" width="18" height="12" rx="4" fill="#ff0000"/>
-                <polygon points="10,9 16,12 10,15" fill="white"/>
-              </svg>
-            </a>
-          </div>
+    <a
+      href="https://x.com/don_kasjo"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="inline-flex w-10 h-10 items-center justify-center rounded-full bg-white/5 hover:bg-white/10 transition"
+    >
+      <svg width="20" height="20" fill="white" viewBox="0 0 24 24">
+        <path d="M17.53 6.47L12 10.94 6.47 6.47 10.94 12l-4.47 4.47L12 13.06l4.47 4.47L13.06 12z"/>
+      </svg>
+    </a>
 
-          <p className="leading-relaxed text-gray-500 max-w-3xl mx-auto">
-            Ta strona prezentuje informacje o ekskluzywnych kasynach i zawiera linki afiliacyjne przeznaczone wyłącznie dla osób w regionach, gdzie hazard online jest legalny.
-            <br />
-            Użytkownicy są odpowiedzialni za zgodność z lokalnymi przepisami. Nie wspieramy nielegalnych form hazardu.
-            <br />
-            <span className="text-gray-600">
-              &copy; {new Date().getFullYear()} Don Kasjo
-            </span>
-          </p>
-        </footer>
+    <a
+      href="https://www.youtube.com/@DonKasjoKrol"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="inline-flex w-10 h-10 items-center justify-center rounded-full bg-[#ff0000]/15 hover:bg-[#ff0000]/25 transition"
+    >
+      <svg width="22" height="22" fill="none" viewBox="0 0 24 24">
+        <rect x="3" y="6" width="18" height="12" rx="4" fill="#ff0000"/>
+        <polygon points="10,9 16,12 10,15" fill="white"/>
+      </svg>
+    </a>
+
+    {/* TELEGRAM */}
+    <a
+      href="https://t.me/+I8K0pYk488wyYjE8"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="group inline-flex w-10 h-10 items-center justify-center rounded-full bg-[#229ED9]/15 hover:bg-[#229ED9]/25 transition hover:shadow-[0_0_14px_rgba(34,158,217,0.45)]"
+    >
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="white">
+        <path d="M9.04 15.47l-.39 5.49c.56 0 .8-.24 1.09-.53l2.63-2.51 5.45 3.99c1 .55 1.7.26 1.95-.92l3.53-16.53.01-.01c.29-1.35-.49-1.88-1.46-1.52L1.6 9.48c-1.33.52-1.31 1.26-.23 1.59l5.63 1.76L19.98 5.4c.61-.4 1.17-.18.71.22"/>
+      </svg>
+    </a>
+
+  </div>
+
+  <p className="leading-relaxed text-gray-500 max-w-3xl mx-auto">
+    Ta strona prezentuje informacje o ekskluzywnych kasynach i zawiera linki afiliacyjne przeznaczone wyłącznie dla osób w regionach, gdzie hazard online jest legalny.
+    <br />
+    Użytkownicy są odpowiedzialni za zgodność z lokalnymi przepisami. Nie wspieramy nielegalnych form hazardu.
+    <br />
+    <span className="text-gray-600">
+      &copy; {new Date().getFullYear()} Don Kasjo
+    </span>
+  </p>
+</footer>
       </main>
     </div>
   );
