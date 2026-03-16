@@ -215,15 +215,14 @@ export default function Page() {
 
 <div className="h-10" />
 
-          {/* Lanista */}
+        {/* Lanista */}
 
-<div className="relative w-full max-w-6xl mx-auto">
+<div className="w-full max-w-6xl mx-auto relative">
 
-  {/* NEON TŁO */}
-  <div className="absolute inset-0 rounded-2xl bg-[#22FF88] opacity-20 blur-2xl animate-pulse"></div>
+  <div className="absolute inset-0 rounded-2xl bg-red-500 opacity-10 blur-xl"></div>
 
   <div
-    className="relative w-full bg-gradient-to-br from-[#0B3D2E] to-[#07251D] border border-[#22FF88]/15 rounded-2xl flex flex-col md:flex-row items-center gap-6 p-5 md:p-6 transition-all duration-300 hover:shadow-[0_0_25px_rgba(34,255,136,0.25)] hover:-translate-y-1"
+    className="relative w-full bg-gradient-to-br from-[#0B3D2E] to-[#07251D] border border-red-500/40 rounded-2xl flex flex-col md:flex-row items-center gap-6 p-5 md:p-6 transition-all duration-300 hover:shadow-[0_0_20px_rgba(239,68,68,0.35)] hover:-translate-y-1"
   >
     <div className="bg-[#041A14]/80 backdrop-blur-sm p-4 rounded-xl flex-shrink-0">
       <img
@@ -249,7 +248,7 @@ export default function Page() {
         href="https://lntsa.pclira.com/?mid=349639_2086020"
         target="_blank"
         rel="noopener noreferrer"
-        className="block bg-[#22FF88] text-black font-bold px-8 py-3 rounded-lg text-center transition hover:shadow-[0_0_25px_rgba(34,255,136,0.55)] hover:-translate-y-0.5"
+        className="block bg-[#22FF88] text-black font-bold px-8 py-3 rounded-lg text-center transition hover:shadow-[0_0_20px_rgba(34,255,136,0.55)] hover:-translate-y-0.5"
       >
         Odbierz bonus
       </a>
@@ -263,13 +262,12 @@ export default function Page() {
           
 {/* Sportuna */}
 
-<div className="relative w-full max-w-6xl mx-auto">
+<div className="w-full max-w-6xl mx-auto relative">
 
-  {/* NEON TŁO */}
-  <div className="absolute inset-0 rounded-2xl bg-[#22FF88] opacity-20 blur-2xl animate-pulse"></div>
+  <div className="absolute inset-0 rounded-2xl bg-red-500 opacity-10 blur-xl"></div>
 
   <div
-    className="relative w-full bg-gradient-to-br from-[#0B3D2E] to-[#07251D] border border-[#22FF88]/15 rounded-2xl flex flex-col md:flex-row items-center gap-6 p-5 md:p-6 transition-all duration-300 hover:shadow-[0_0_25px_rgba(34,255,136,0.25)] hover:-translate-y-1"
+    className="relative w-full bg-gradient-to-br from-[#0B3D2E] to-[#07251D] border border-red-500/40 rounded-2xl flex flex-col md:flex-row items-center gap-6 p-5 md:p-6 transition-all duration-300 hover:shadow-[0_0_20px_rgba(239,68,68,0.35)] hover:-translate-y-1"
   >
     <div className="bg-[#041A14]/80 backdrop-blur-sm p-4 rounded-xl flex-shrink-0">
       <img
@@ -295,7 +293,7 @@ export default function Page() {
         href="https://sprt.pclira.com/?mid=349639_2086022"
         target="_blank"
         rel="noopener noreferrer"
-        className="block bg-[#22FF88] text-black font-bold px-8 py-3 rounded-lg text-center transition hover:shadow-[0_0_25px_rgba(34,255,136,0.55)] hover:-translate-y-0.5"
+        className="block bg-[#22FF88] text-black font-bold px-8 py-3 rounded-lg text-center transition hover:shadow-[0_0_20px_rgba(34,255,136,0.55)] hover:-translate-y-0.5"
       >
         Odbierz bonus
       </a>
