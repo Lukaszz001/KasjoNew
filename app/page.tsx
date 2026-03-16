@@ -215,6 +215,95 @@ export default function Page() {
 
 <div className="h-10" />
 
+          {/* Lanista */}
+
+<div className="relative w-full max-w-6xl mx-auto">
+
+  {/* NEON TŁO */}
+  <div className="absolute inset-0 rounded-2xl bg-[#22FF88] opacity-20 blur-2xl animate-pulse"></div>
+
+  <div
+    className="relative w-full bg-gradient-to-br from-[#0B3D2E] to-[#07251D] border border-[#22FF88]/15 rounded-2xl flex flex-col md:flex-row items-center gap-6 p-5 md:p-6 transition-all duration-300 hover:shadow-[0_0_25px_rgba(34,255,136,0.25)] hover:-translate-y-1"
+  >
+    <div className="bg-[#041A14]/80 backdrop-blur-sm p-4 rounded-xl flex-shrink-0">
+      <img
+        src="/lanista.png"
+        alt="Lanista"
+        className="w-[130px] md:w-[150px] h-auto object-contain"
+      />
+    </div>
+
+    <div className="flex-1 text-center md:text-left">
+      <h3 className="text-base md:text-lg font-bold mb-3 whitespace-nowrap">
+        125% BONUS POWITALNY
+      </h3>
+      <ul className="space-y-1 text-sm md:text-base text-gray-200">
+        <li>• Bonus powitalny 125% do 3500 PLN</li>
+        <li>• 250 darmowych spinów</li>
+        <li>• Bonus 100% do 450 PLN na sport</li>
+      </ul>
+    </div>
+
+    <div className="w-full md:w-auto flex flex-col gap-2">
+      <a
+        href="https://lntsa.pclira.com/?mid=349639_2086020"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="block bg-[#22FF88] text-black font-bold px-8 py-3 rounded-lg text-center transition hover:shadow-[0_0_25px_rgba(34,255,136,0.55)] hover:-translate-y-0.5"
+      >
+        Odbierz bonus
+      </a>
+    </div>
+  </div>
+</div>
+
+<div className="h-10" />
+
+
+          
+{/* Sportuna */}
+
+<div className="relative w-full max-w-6xl mx-auto">
+
+  {/* NEON TŁO */}
+  <div className="absolute inset-0 rounded-2xl bg-[#22FF88] opacity-20 blur-2xl animate-pulse"></div>
+
+  <div
+    className="relative w-full bg-gradient-to-br from-[#0B3D2E] to-[#07251D] border border-[#22FF88]/15 rounded-2xl flex flex-col md:flex-row items-center gap-6 p-5 md:p-6 transition-all duration-300 hover:shadow-[0_0_25px_rgba(34,255,136,0.25)] hover:-translate-y-1"
+  >
+    <div className="bg-[#041A14]/80 backdrop-blur-sm p-4 rounded-xl flex-shrink-0">
+      <img
+        src="/sportuna.png"
+        alt="Sportuna"
+        className="w-[130px] md:w-[150px] h-auto object-contain"
+      />
+    </div>
+
+    <div className="flex-1 text-center md:text-left">
+      <h3 className="text-base md:text-lg font-bold mb-3 whitespace-nowrap">
+        PAKIET POWITALNY 225%
+      </h3>
+      <ul className="space-y-1 text-sm md:text-base text-gray-200">
+        <li>• Pakiet powitalny 225% do 13500 PLN</li>
+        <li>• 250 darmowych spinów</li>
+        <li>• Bonus 100% do 450 PLN na sport</li>
+      </ul>
+    </div>
+
+    <div className="w-full md:w-auto flex flex-col gap-2">
+      <a
+        href="https://sprt.pclira.com/?mid=349639_2086022"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="block bg-[#22FF88] text-black font-bold px-8 py-3 rounded-lg text-center transition hover:shadow-[0_0_25px_rgba(34,255,136,0.55)] hover:-translate-y-0.5"
+      >
+        Odbierz bonus
+      </a>
+    </div>
+  </div>
+</div>
+
+<div className="h-10" />
 
 
 
