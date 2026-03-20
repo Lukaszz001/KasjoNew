@@ -184,6 +184,7 @@ export default function Page() {
       <li>• Bonus powitalny 100% do 1000 PLN</li>
       <li>• 100 darmowych spinów</li>
       <li>• Możliwość płatności BLIK!</li>
+      <li>• Szybka realizacja wypłat!</li>
     </ul>
   </div>
 
