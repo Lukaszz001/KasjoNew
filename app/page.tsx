@@ -164,17 +164,20 @@ export default function Page() {
 {/* ========================= */}
 
 <div className="relative w-full max-w-6xl mx-auto">
-  {/* 🔥 TOP 1 BADGE */}
-  <div className="absolute -top-3 -left-3 z-20">
-    <div
-      className="flex items-center gap-1 px-3 py-1 rounded-full 
-      bg-[#22FF88] text-black text-xs md:text-sm font-extrabold 
-      shadow-[0_0_15px_rgba(34,255,136,0.8)] 
-      animate-pulse"
-    >
-      ⭐ TOP 1
-    </div>
+  {/* 🔥 TOP 1 BADGE BIG + BORDER */}
+<div className="absolute -top-4 -left-4 z-20">
+  <div
+    className="flex items-center gap-2 px-4 py-2 rounded-full 
+    bg-[#22FF88] text-black text-sm md:text-base font-extrabold 
+    
+    border-2 border-[#22FF88]
+    shadow-[0_0_20px_rgba(34,255,136,0.9)] 
+    
+    animate-pulse"
+  >
+    ⭐ TOP 1
   </div>
+</div>
 
   <div
     className="bg-gradient-to-br from-[#0B3D2E] to-[#07251D] 
