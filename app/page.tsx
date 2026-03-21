@@ -160,15 +160,28 @@ export default function Page() {
 
 
 {/* ========================= */}
-{/* Slotuna – BEZ PODŚWIETLENIA */}
+{/* Slotuna – TOP 1 BADGE */}
 {/* ========================= */}
 
 <div className="relative w-full max-w-6xl mx-auto">
+  {/* 🔥 TOP 1 BADGE */}
+  <div className="absolute -top-3 -left-3 z-20">
+    <div
+      className="flex items-center gap-1 px-3 py-1 rounded-full 
+      bg-[#22FF88] text-black text-xs md:text-sm font-extrabold 
+      shadow-[0_0_15px_rgba(34,255,136,0.8)] 
+      animate-pulse"
+    >
+      ⭐ TOP 1
+    </div>
+  </div>
+
   <div
     className="bg-gradient-to-br from-[#0B3D2E] to-[#07251D] 
     border border-[#22FF88]/15 rounded-2xl 
     flex flex-col md:flex-row items-center gap-6 p-5 md:p-6 
-    transition-all duration-300"
+    transition-all duration-300 
+    hover:shadow-[0_0_40px_rgba(34,255,136,0.25)]"
   >
     <div className="bg-[#041A14]/80 backdrop-blur-sm p-4 rounded-xl flex-shrink-0">
       <img
@@ -214,7 +227,6 @@ export default function Page() {
 </div>
 
 <div className="h-10" />
-
        {/* Lanista */}
 
 <div className="w-full max-w-6xl mx-auto relative">
