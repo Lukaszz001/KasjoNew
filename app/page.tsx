@@ -159,25 +159,71 @@ export default function Page() {
 
 
 
-{/* ========================= */}
-{/* Slotuna – TOP 1 BADGE */}
-{/* ========================= */}
-
+{/* Kodabet – z TOP 1 */}
 <div className="relative w-full max-w-6xl mx-auto">
-  {/* 🔥 TOP 1 BADGE BIG + BORDER */}
-<div className="absolute -top-4 -left-4 z-20">
+
+  {/* 🔥 TOP 1 BADGE */}
+  <div className="absolute -top-4 -left-4 z-20">
+    <div
+      className="flex items-center gap-2 px-4 py-2 rounded-full 
+      bg-[#22FF88] text-black text-sm md:text-base font-extrabold 
+      border-2 border-[#22FF88]
+      shadow-[0_0_20px_rgba(34,255,136,0.9)] 
+      animate-pulse"
+    >
+      ⭐ TOP 1
+    </div>
+  </div>
+
   <div
-    className="flex items-center gap-2 px-4 py-2 rounded-full 
-    bg-[#22FF88] text-black text-sm md:text-base font-extrabold 
-    
-    border-2 border-[#22FF88]
-    shadow-[0_0_20px_rgba(34,255,136,0.9)] 
-    
-    animate-pulse"
+    className="w-full bg-gradient-to-br from-[#0B3D2E] to-[#07251D] border border-[#22FF88]/15 rounded-2xl flex flex-col md:flex-row items-center gap-6 p-5 md:p-6 transition-all duration-300 hover:shadow-[0_0_25px_rgba(34,255,136,0.15)] hover:-translate-y-1 relative"
   >
-    ⭐ TOP 1
+
+    <div className="bg-[#041A14]/80 backdrop-blur-sm p-4 rounded-xl flex-shrink-0">
+      <img
+        src="/kodabet.png"
+        alt="Kodabet"
+        className="w-[130px] md:w-[150px] h-auto object-contain"
+      />
+    </div>
+
+    <div className="flex-1 text-center md:text-left">
+      <h3 className="text-base md:text-lg font-bold mb-3 whitespace-nowrap">
+        100% BONUS POWITALNY + 100FS
+      </h3>
+      <ul className="space-y-1 text-sm md:text-base text-gray-200">
+        <li>• Bonus powitalny 100% do 1000 PLN</li>
+        <li>• 100 darmowych spinów</li>
+        <li>• Możliwość płatności BLIK!</li>
+        <li>• Szybka realizacja wypłat!</li>
+      </ul>
+    </div>
+
+    <div className="w-full md:w-auto flex flex-col gap-2">
+      <a
+        href="https://afftrk.karhubet.com/C.ashx?btag=a_20726b_972c_&affid=5048&siteid=20726&adid=972&c="
+        target="_blank"
+        rel="noopener noreferrer"
+        onClick={() =>
+          (window as any).gtag?.("event", "external_click", {
+            link_url: "https://afftrk.karhubet.com/C.ashx?btag=a_20726b_972c_&affid=5048&siteid=20726&adid=972&c=",
+            banner: "Kodabet",
+          })
+        }
+        className="block bg-[#22FF88] text-black font-bold px-8 py-3 rounded-lg text-center transition hover:shadow-[0_0_25px_rgba(34,255,136,0.55)] hover:-translate-y-0.5"
+      >
+        Odbierz bonus
+      </a>
+    </div>
+
   </div>
 </div>
+
+<div className="h-10" />
+
+
+{/* Slotuna – bez TOP 1 */}
+<div className="relative w-full max-w-6xl mx-auto">
 
   <div
     className="bg-gradient-to-br from-[#0B3D2E] to-[#07251D] 
@@ -230,6 +276,8 @@ export default function Page() {
 </div>
 
 <div className="h-10" />
+
+          
        {/* Lanista */}
 
 <div className="w-full max-w-6xl mx-auto relative">
@@ -382,54 +430,7 @@ export default function Page() {
           
          
 
-          {/* Kodabet */}
-
-<div
-  className="w-full max-w-6xl mx-auto bg-gradient-to-br from-[#0B3D2E] to-[#07251D] border border-[#22FF88]/15 rounded-2xl flex flex-col md:flex-row items-center gap-6 p-5 md:p-6 transition-all duration-300 hover:shadow-[0_0_25px_rgba(34,255,136,0.15)] hover:-translate-y-1 relative"
->
-
-
-
-  <div className="bg-[#041A14]/80 backdrop-blur-sm p-4 rounded-xl flex-shrink-0">
-    <img
-      src="/kodabet.png"
-      alt="Kodabet"
-      className="w-[130px] md:w-[150px] h-auto object-contain"
-    />
-  </div>
-
-  <div className="flex-1 text-center md:text-left">
-    <h3 className="text-base md:text-lg font-bold mb-3 whitespace-nowrap">
-      100% BONUS POWITALNY + 100FS
-    </h3>
-    <ul className="space-y-1 text-sm md:text-base text-gray-200">
-      <li>• Bonus powitalny 100% do 1000 PLN</li>
-      <li>• 100 darmowych spinów</li>
-      <li>• Możliwość płatności BLIK!</li>
-      <li>• Szybka realizacja wypłat!</li>
-    </ul>
-  </div>
-
-  <div className="w-full md:w-auto flex flex-col gap-2">
-    <a
-      href="https://afftrk.karhubet.com/C.ashx?btag=a_20726b_972c_&affid=5048&siteid=20726&adid=972&c="
-      target="_blank"
-      rel="noopener noreferrer"
-      onClick={() =>
-        (window as any).gtag?.("event", "external_click", {
-          link_url: "https://afftrk.karhubet.com/C.ashx?btag=a_20726b_972c_&affid=5048&siteid=20726&adid=972&c=",
-          banner: "Kodabet",
-        })
-      }
-      className="block bg-[#22FF88] text-black font-bold px-8 py-3 rounded-lg text-center transition hover:shadow-[0_0_25px_rgba(34,255,136,0.55)] hover:-translate-y-0.5"
-    >
-      Odbierz bonus
-    </a>
-  </div>
-
-</div>
-
-<div className="h-10" />
+         
 
 
 
