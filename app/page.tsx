@@ -480,15 +480,15 @@ export default function Page() {
 <div className="h-10" />
 
           
-         {/* DudeSpin – NOWY STYL (bez kodu) */}
+      {/* DudeSpin – NOWY STYL (zielony + GTAG) */}
 <div className="relative w-full max-w-6xl mx-auto">
 
   <div
-    className="w-full bg-gradient-to-br from-[#5B2C6F] to-[#4A235A] border border-[#7D3C98]/30 rounded-2xl flex flex-col md:flex-row items-center gap-6 p-5 md:p-6 transition-all duration-300 hover:shadow-[0_0_25px_rgba(125,60,152,0.25)] hover:-translate-y-1 relative"
+    className="w-full bg-gradient-to-br from-[#0B3D2E] to-[#07251D] border border-[#22FF88]/15 rounded-2xl flex flex-col md:flex-row items-center gap-6 p-5 md:p-6 transition-all duration-300 hover:shadow-[0_0_25px_rgba(34,255,136,0.15)] hover:-translate-y-1 relative"
   >
 
     {/* Logo */}
-    <div className="bg-[#1E0F2E]/80 backdrop-blur-sm p-4 rounded-xl flex-shrink-0">
+    <div className="bg-[#041A14]/80 backdrop-blur-sm p-4 rounded-xl flex-shrink-0">
       <img
         src="/dude.png"
         alt="DudeSpin"
@@ -498,7 +498,7 @@ export default function Page() {
 
     {/* Treść */}
     <div className="flex-1 text-center md:text-left">
-      <h3 className="text-base md:text-lg font-bold mb-3 whitespace-nowrap">
+      <h3 className="text-base md:text-lg font-bold mb-3 whitespace-nowrap text-white">
         PAKIET POWITALNY 300% DO 9000 PLN + 150FS
       </h3>
 
@@ -506,6 +506,7 @@ export default function Page() {
         <li>• Bonus 300% do 9000 PLN</li>
         <li>• 150 darmowych spinów</li>
         <li>• 100% bonus na sport</li>
+        <li>• Wysoki pakiet dla nowych graczy</li>
       </ul>
     </div>
 
@@ -516,12 +517,12 @@ export default function Page() {
         target="_blank"
         rel="noopener noreferrer"
         onClick={() =>
-          (window as any).gtag?.('event', 'external_click', {
-            link_url: 'https://ddspn.lynmonkel.com/?mid=353195_2038029',
-            banner: 'DudeSpin',
+          (window as any).gtag?.("event", "external_click", {
+            link_url: "https://ddspn.lynmonkel.com/?mid=353195_2038029",
+            banner: "DudeSpin",
           })
         }
-        className="block bg-[#7D3C98] text-white font-bold px-8 py-3 rounded-lg text-center transition hover:shadow-[0_0_20px_rgba(125,60,152,0.6)] hover:-translate-y-0.5"
+        className="block bg-[#22FF88] text-black font-bold px-8 py-3 rounded-lg text-center transition hover:shadow-[0_0_25px_rgba(34,255,136,0.55)] hover:-translate-y-0.5"
       >
         Odbierz bonus
       </a>
