@@ -191,7 +191,7 @@ export default function Page() {
     {/* Treść */}
     <div className="flex-1 text-center md:text-left">
       <h3 className="text-base md:text-lg font-bold mb-3 whitespace-nowrap">
-        NA START 250% DO 4000 PLN + 350FS
+        WIELKA LOTERIA! 50 PLN = 1 LOS, PULA 40 000 PLN!
       </h3>
 
       <ul className="space-y-1 text-sm md:text-base text-gray-200">
@@ -204,12 +204,12 @@ export default function Page() {
     {/* CTA */}
     <div className="w-full md:w-auto flex flex-col gap-2">
       <a
-        href="https://www.luckyfruits1.com/pl/register/step1/?CXD=a_386b_11c_&affid=183&siteid=386"
+        href=" https://affitrck2.com/C.ashx?btag=a_386b_15c_&affid=183&siteid=386&adid=15&c="
         target="_blank"
         rel="noopener noreferrer"
         onClick={() =>
           (window as any).gtag?.("event", "external_click", {
-            link_url: "https://affitrck2.com/C.ashx?btag=a_386b_11c_&affid=183&siteid=386&adid=11&c=",
+            link_url: " https://affitrck2.com/C.ashx?btag=a_386b_15c_&affid=183&siteid=386&adid=15&c=",
             banner: "LuckyFruits",
           })
         }
@@ -241,24 +241,23 @@ export default function Page() {
 
     <div className="flex-1 text-center md:text-left">
       <h3 className="text-base md:text-lg font-bold mb-3 whitespace-nowrap">
-        100% BONUS POWITALNY + 100FS
+        WIELKA LOTERIA! 50 PLN = 1 LOS, PULA 40 000 PLN!
       </h3>
       <ul className="space-y-1 text-sm md:text-base text-gray-200">
         <li>• Bonus powitalny 100% do 1000 PLN</li>
         <li>• 100 darmowych spinów</li>
         <li>• Możliwość płatności BLIK!</li>
-        <li>• Szybka realizacja wypłat!</li>
       </ul>
     </div>
 
     <div className="w-full md:w-auto flex flex-col gap-2">
       <a
-        href="https://afftrk.karhubet.com/C.ashx?btag=a_20726b_972c_&affid=5048&siteid=20726&adid=972&c="
+        href="https://afftrk.karhubet.com/C.ashx?btag=a_20726b_1428c_&affid=5048&siteid=20726&adid=1428&c="
         target="_blank"
         rel="noopener noreferrer"
         onClick={() =>
           (window as any).gtag?.("event", "external_click", {
-            link_url: "https://afftrk.karhubet.com/C.ashx?btag=a_20726b_972c_&affid=5048&siteid=20726&adid=972&c=",
+            link_url: "https://afftrk.karhubet.com/C.ashx?btag=a_20726b_1428c_&affid=5048&siteid=20726&adid=1428&c=",
             banner: "Kodabet",
           })
         }
